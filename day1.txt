@@ -1,0 +1,90 @@
+1.Explain about the main method in java?
+             main method is the starting point for JVM to start execution of a Java program. Without the main() method, JVM will not execute the program.
+  main() method is the starting point from where compiler starts program execution.
+  Syntax for main Method-public static void main(String[] args)
+                   Public- Access Modifier
+                   static - Keyword
+                   void  - return type (Doesn't Return anything)
+                   main  - method name
+           String[] args - single argument of type string array 
+
+
+2.What are the different Control flow Statements available in java?
+            1. Decision Making Statement- 1. Simple If 
+                                          2. If else
+                                          3. nested if
+                                          4. if-else-if
+                                          5. switch
+            2. Looping Statement        - 1. For
+                                          2. while
+                                          3. do while
+                                          4. For-each
+            3. Jump Statement           - 1. Break
+                                          2. continue
+                                          3. return
+
+
+3.What is the Difference betweeen break and continue statements?
+            Break - It is used to terminate the loop or iteration. It is used in loop and Switch case. keyword- break;
+            Continue - It is used to continue the loop or iteration. It is used in loop only. keyword- continue;
+
+
+4.What is an Array? How will you declare an array in java?
+            Array is a collection of similar Datatypes. A specific element in an array
+is accessed by its index.Array starts from zero and we cannot increase the array size at runtime.
+ 
+            Two types of Array- 1. Single Dimensional Array and 2. Multi Dimensional Array.
+                  By two ways, String object can created
+                      1. By new keyword- dataType [ ] nameOfArray = new dataType [size]. 
+                             Example- String [] text=new String[5];
+                      2. Literal Array-  dataType [ ] nameOfArray = {value1, value2, value3, value4}.
+                           Example- int[] text={1,2,3,4}
+
+
+5.When will you get ArrayIndexOutOfBoundsException?
+                      ArrayIndexOutOfBoundsException occurs while length exceeds array index (or)Array index is out-of-bounds.
+                    example - int[] text={1,2,3,4}
+                              for(i=0; i<=text.length; i++)
+                                          Here text.length exceeds array index, so showsArrayIndexOutOfBoundsException
+
+
+6.Define the Syntax to create an object for a class.
+What are the naming conventions to be followed while creating a class, 
+method and a variable.Explain with examples
+           Syntax for an object---> ClassName ObjectName = keyword ConstructorName(); 
+                           example- BiCycle Cycle=new Bicycle();
+                                      1. BiCycle Cycle------>  declare reference to object
+                                      2. Cycle=new Bicycle() ------>we can use Cycle as if it were a BiCycle object.
+           Naming Convention, while creating a class    - Pascal Notation
+                              example- public class EditLead{------------
+                                        }
+           Naming Convention, while creating a method   - Camel case. 
+                              example- public void addTwoNumbers(){----------
+                                         }                              
+           Naming Convention, while creating a variable -  Camel case.
+                               Example- char editLead='E';
+
+
+7.What is Variable?How will you declare a variables in java?
+            Variable is the basic unit of storage in a Java program which stores data values during Java program execution.
+  variables have mainly three types- 1. Local, 2. Instance(or) Global and 3. Static. 
+             Declaration of Variable- Datatype VariableName= value;
+                                     Example- char startingLetter='c';
+
+
+8.What is String in java? Is it a Data Type?
+          It is a Class and non-primitive Data type. It is Immutable because it is constant, once String has been created, we can't change it.
+   size-64bits and default value is null.
+    Yes, It is Non-Primitive Datatype.
+
+
+9.What are the different ways to create the String Object in java?
+         By two ways, String object can created
+           1.String Literal- String Text="Testleaf";
+           2.By new keyword- String Text=new String("Testleaf");
+
+
+10.What is the Difference between .Equals and ==? 
+              .equals - It is a method. It checks to the comparison of actual content of the objects. It is used only in String.
+               ==     - It is a operator. It checks the memory references of the objects. It is used with both objects and primitives.
+Footer

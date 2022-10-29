@@ -1,0 +1,59 @@
+1) What is Selenium? What are the different Selenium components? Explain about Selenium Webdriver.
+          Selenium is used to automate web based application across different browsers. It is a open source automated testing framework. With a use of 14 programming Languages like Java,
+Python, C#, etc to create Selenium Test Scripts.
+          Components of Selenium- Selenium IDE (Integrated Development Environment), Selenium Grid, WebDriver, Selenium Grid.
+          WebDriver - It is a web framework that permits you to execute cross-browser tests.       
+
+
+2) How does Selenium communicate with the Web browsers?
+           Through Application Programming Interface (API). And, Selenium scripts creates an HTTP request for each selenium command and sends it to the browser driver. An HTTP request is
+     then send to the server using Browser Driver. 
+      
+
+3.What are the locators available  to find an element using Selenium?
+           ID, Name, Class name, Link text, Partial Link text, Tag name, CSS selector, Xpath.
+
+4. Why ID is preferable than X-Path?
+       ID is the faster technique to locate desired WebElements on the page. IDs are unique for each element on the page, it is considered the fastest and safest method to locate elements
+       Finding Elements using XPath  is better for locating elements having complex selectors. In Absolute XPath, If any child tagname or text field gets added, this XPath will get 
+       Failure. Time Management is high and It takes long time to run.                                                                                    
+
+
+5.How to select value in dropdown?
+           The 'Select' class in part of WebDriver supports library. The class provides a numberof features for working with select boxes, and one useful one is selectByValue.
+                  By using of selectByValue(".."), we can select values.
+
+
+6) What is the difference between Absolute Path and Relative Path?
+           Absolute Xpath- Starting from root node. It starts with /. It is complex to use. Disadvantages- 1. If any tagname or text field gets added, this XPath will get Failure. 
+                                                                                                           2. Time Management is high and It takes long time to run.
+           Relative Xpath - Starting from current node. It starts with //. Many types of Relative Xpath- 1. Attribute based XPath 2. Text based 3. Collection Based 4. Contains Xpath. 
+                                                   5. Parent to Child 6. Child to Parent 7. GrandParent to GrandChild 8. GrandChild to GrandParent 
+                                                   9. ElderSibling to YoungerSibling 10. YoungerSibling to ElderSibling 11. ElderCousin to YoungerCousin 12. YoungerCousin to ElderCousin
+
+
+7) How to verify if the given check box is checked or not (it is not taught but you can explore) Try here: http://leafground.com/pages/checkbox.html
+           WebElement checkBoxSelected1 = driver.findElement(By.locator(""));
+			boolean isSelected1 = checkBoxSelected1.isSelected();
+
+			if(isSelected1 == true) {
+				System.out.println("Checkbox is selected");
+	} else {
+		        System.out.println("Checkbox is not selected");
+	}
+
+8)Difference between System.setProperty and WebDriverManager
+                 WebDriverManager- It verifies the version of the browser installed in our local machine by its own. It also uses the latest version of the driver. It makes it easy 
+                                   and convert the manual stuff into automation.
+                System.setProperty- Before Starting to automate the web application, we need to download the driver executable manually for the required browser. After downloading, we need
+                                    to set the path. All the time, we should to keep upadted version, else it will not work.                
+
+
+9) Write the syntax for preceding and following x-paths.
+                  ElderCousin to YoungerCousin- Eldercousin XPath/Following::tagname of the younger cousin
+                  YoungerCousin to ElderCousin -Youngercousin XPath/Preceeding::tagname of the Elder cousin
+
+
+10) How to get an attribute value using Selenium WebDriver?
+                   By using of getAttribute(). It is a method helps to get the value of any attribute of a web element, which is returned as a string. 
+Footer
